@@ -1,5 +1,6 @@
 *** Settings ***
-#Library    SeleniumLibrary
+Documentation      RobotFrameWork by RaviBabu.
+Library    SeleniumLibrary
 Documentation      RobotFrameWork by RaviBabu.
 Library    SeleniumLibrary
 *** Variables ***
