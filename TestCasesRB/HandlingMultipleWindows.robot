@@ -1,9 +1,9 @@
 *** Settings ***
-Library    SeleniumLibrary
+#Library    SeleniumLibrary
 Documentation      RobotFrameWork by RaviBabu.
 Library    SeleniumLibrary
 *** Variables ***
-${LOGIN URL}      https://practice.expandtesting.com/
+${LOGIN URL}      https://the-internet.herokuapp.com/
 ${BROWSER}        Chrome
 *** Test Cases ***
 #Validating MultipleBrowsers
@@ -43,4 +43,6 @@ Opening new Tabbed window
     Log to console    The title of First window is : ${TitleOf1stWindow}
     Click Link    Click Here
     sleep    4
-    Select window    Url:https://practice.expandtesting.com/windows/new
+    Switch window    New Window
+    ${Titleof2ndWindow}=    Get Title
+    log to console    The title of Second Window is : ${Titleof2ndWindow}
