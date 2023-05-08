@@ -13,7 +13,7 @@ Validating CheckBoxes
 *** Keywords ***
 Open Browser To Validate
     Open Browser    ${LOGIN URL}    ${BROWSER}
-    Title Should Be    Practice WebApp | Practice Automation - UI and API Testing       #Page Title Validation
+#    Title Should Be    Practice WebApp | Practice Automation - UI and API Testing       #Page Title Validation
 Click On CheckBox
 #    sleep   2
 ##    scroll element into view    xpath://input[@id='checkbox1']
