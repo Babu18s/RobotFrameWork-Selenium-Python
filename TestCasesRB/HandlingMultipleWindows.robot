@@ -6,20 +6,20 @@ Library    SeleniumLibrary
 ${LOGIN URL}      https://the-internet.herokuapp.com/
 ${BROWSER}        Chrome
 *** Test Cases ***
-#Validating MultipleBrowsers
-#    open browser to validate
-#
-#    sleep    3
-#    open another browser
-#    sleep    3
-#    switch browser    2
-#    ${edgebrowsertitle}=    Get Title
-#    log to console    ${edgebrowsertitle}
-#    sleep    3
-#    switch browser    1
-#    ${chromebrowsertitle}=    Get Title
-#    log to console    ${chromebrowsertitle}
-#    sleep    4
+Validating MultipleBrowsers
+    open browser to validate
+
+    sleep    3
+    open another browser
+    sleep    3
+    switch browser    2
+    ${edgebrowsertitle}=    Get Title
+    log to console    ${edgebrowsertitle}
+    sleep    3
+    switch browser    1
+    ${chromebrowsertitle}=    Get Title
+    log to console    ${chromebrowsertitle}
+    sleep    4
 
 Validating MultipleWindows
     open browser to validate
