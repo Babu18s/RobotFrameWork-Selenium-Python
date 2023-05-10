@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Sample Testcases by using Tags
+Documentation    Sample Testcases by using Tags(Grouping)
 *** Test Cases ***
 TC1 for Regestration
     [Tags]  Regression
