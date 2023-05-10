@@ -1,0 +1,19 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.HandlingAlerts :: RobotFrameWork by RaviBabu.                          
+==============================================================================
+Validating AlertsPopUP                                                I am a Js Alert
+the alert message Responce is: OK
+I am a Js Confirm
+the alert message Responce is: Cancel
+the alert message Responce is: HI HELLO HOW ARE YOU
+| PASS |
+------------------------------------------------------------------------------
+Suites.HandlingAlerts :: RobotFrameWork by RaviBabu.                  | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\ResultsP\pabot_results\0\output.xml

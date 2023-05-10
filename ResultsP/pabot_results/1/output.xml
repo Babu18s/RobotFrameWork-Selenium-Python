@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230510 18:45:11.660" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="HandlingDynamicTable" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\HandlingDynamicTable.robot">
+<test id="s1-s1-t1" name="Validating Dynamic table" line="10">
+<kw name="Open Browser To Validate">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 18:45:12.076" level="INFO">Opening browser 'Chrome' to base url 'https://practice.expandtesting.com'.</msg>
+<status status="PASS" starttime="20230510 18:45:12.076" endtime="20230510 18:45:16.322"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230510 18:45:16.322" endtime="20230510 18:45:16.458"/>
+</kw>
+<status status="PASS" starttime="20230510 18:45:12.068" endtime="20230510 18:45:16.460"/>
+</kw>
+<kw name="DynamicTable">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Dynamic Table</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230510 18:45:16.460" level="INFO">Clicking link 'Dynamic Table'.</msg>
+<status status="PASS" starttime="20230510 18:45:16.460" endtime="20230510 18:45:17.115"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${Headslist}</var>
+<arg>xpath://table[@class='table table-striped']/thead/tr/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20230510 18:45:17.132" level="INFO">${Headslist} = 5</msg>
+<status status="PASS" starttime="20230510 18:45:17.117" endtime="20230510 18:45:17.132"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Headslist}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230510 18:45:17.134" endtime="20230510 18:45:17.134"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{listofNAames}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230510 18:45:17.134" level="INFO">@{listofNAames} = [ ]</msg>
+<status status="PASS" starttime="20230510 18:45:17.134" endtime="20230510 18:45:17.134"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${y}</var>
+<value>${Headslist}</value>
+<iter>
+<var name="${y}">0</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${listofNAame}</var>
+<arg>xpath://table[@class='table table-striped']/thead/tr/th[${y}+1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230510 18:45:17.157" level="INFO">${listofNAame} = Name</msg>
+<status status="PASS" starttime="20230510 18:45:17.134" endtime="20230510 18:45:17.157"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${listofNAames}</arg>
+<arg>${listofNAame}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230510 18:45:17.157" endtime="20230510 18:45:17.157"/>
+</kw>
+<status status="PASS" starttime="20230510 18:45:17.134" endtime="20230510 18:45:17.157"/>
+</iter>
+<iter>
+<var name="${y}">1</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${listofNAame}</var>
+<arg>xpath://table[@class='table table-striped']/thead/tr/th[${y}+1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230510 18:45:17.186" level="INFO">${listofNAame} = Disk</msg>
+<status status="PASS" starttime="20230510 18:45:17.157" endtime="20230510 18:45:17.186"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${listofNAames}</arg>
+<arg>${listofNAame}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230510 18:45:17.186" endtime="20230510 18:45:17.186"/>
+</kw>
+<status status="PASS" starttime="20230510 18:45:17.157" endtime="20230510 18:45:17.186"/>
+</iter>
+<iter>
+<var name="${y}">2</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${listofNAame}</var>
+<arg>xpath://table[@class='table table-striped']/thead/tr/th[${y}+1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230510 18:45:17.208" level="INFO">${listofNAame} = Network</msg>
+<status status="PASS" starttime="20230510 18:45:17.186" endtime="20230510 18:45:17.208"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${listofNAames}</arg>
+<arg>${listofNAame}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230510 18:45:17.214" endtime="20230510 18:45:17.214"/>
+</kw>
+<status status="PASS" starttime="20230510 18:45:17.186" endtime="20230510 18:45:17.214"/>
+</iter>
+<iter>
+<var name="${y}">3</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${listofNAame}</var>
+<arg>xpath://table[@class='table table-striped']/thead/tr/th[${y}+1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230510 18:45:17.240" level="INFO">${listofNAame} = CPU</msg>
+<status status="PASS" starttime="20230510 18:45:17.214" endtime="20230510 18:45:17.240"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${listofNAames}</arg>
+<arg>${listofNAame}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230510 18:45:17.240" endtime="20230510 18:45:17.240"/>
+</kw>
+<status status="PASS" starttime="20230510 18:45:17.214" endtime="20230510 18:45:17.240"/>
+</iter>
+<iter>
+<var name="${y}">4</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${listofNAame}</var>
+<arg>xpath://table[@class='table table-striped']/thead/tr/th[${y}+1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230510 18:45:17.265" level="INFO">${listofNAame} = Memory</msg>
+<status status="PASS" starttime="20230510 18:45:17.240" endtime="20230510 18:45:17.265"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${listofNAames}</arg>
+<arg>${listofNAame}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230510 18:45:17.265" endtime="20230510 18:45:17.265"/>
+</kw>
+<status status="PASS" starttime="20230510 18:45:17.240" endtime="20230510 18:45:17.265"/>
+</iter>
+<status status="PASS" starttime="20230510 18:45:17.134" endtime="20230510 18:45:17.265"/>
+</for>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${listofNAames}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230510 18:45:17.265" endtime="20230510 18:45:17.265"/>
+</kw>
+<kw name="Get Index From List" library="Collections">
+<var>${indexofcpu}</var>
+<arg>${listofNAames}</arg>
+<arg>CPU</arg>
+<doc>Returns the index of the first occurrence of the ``value`` on the list.</doc>
+<msg timestamp="20230510 18:45:17.265" level="INFO">${indexofcpu} = 3</msg>
+<status status="PASS" starttime="20230510 18:45:17.265" endtime="20230510 18:45:17.265"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${AddIndexby1}</var>
+<arg>${1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230510 18:45:17.265" level="INFO">${AddIndexby1} = 1</msg>
+<status status="PASS" starttime="20230510 18:45:17.265" endtime="20230510 18:45:17.265"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${IndexvalueOfCPU}</var>
+<arg>${${indexofcpu} + ${AddIndexby1}}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230510 18:45:17.272" level="INFO">${IndexvalueOfCPU} = 4</msg>
+<status status="PASS" starttime="20230510 18:45:17.265" endtime="20230510 18:45:17.272"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>the cpu value : ${IndexvalueOfCPU}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230510 18:45:17.272" endtime="20230510 18:45:17.272"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ChromeCPU}</var>
+<arg>xpath://table[@class='table table-striped']//thead//tr//th[text()='Name']/../..//following-sibling::tbody//tr//td[text()='Chrome']//parent::tr//child::td[${IndexvalueOfCPU}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230510 18:45:17.297" level="INFO">${ChromeCPU} = 5.8%</msg>
+<status status="PASS" starttime="20230510 18:45:17.272" endtime="20230510 18:45:17.297"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>The chrome cpu value is : ${ChromeCPU}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230510 18:45:17.297" endtime="20230510 18:45:17.297"/>
+</kw>
+<status status="PASS" starttime="20230510 18:45:16.460" endtime="20230510 18:45:17.297"/>
+</kw>
+<status status="PASS" starttime="20230510 18:45:12.068" endtime="20230510 18:45:17.297"/>
+</test>
+<doc>RobotFrameWork By Ravi Babu</doc>
+<status status="PASS" starttime="20230510 18:45:11.707" endtime="20230510 18:45:17.317"/>
+</suite>
+<status status="PASS" starttime="20230510 18:45:11.677" endtime="20230510 18:45:17.317"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="HandlingDynamicTable">Suites.HandlingDynamicTable</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230510 18:45:11.648" level="ERROR">Error in file 'C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\HandlingMultipleWindows.robot' on line 4: Setting 'Documentation' is allowed only once. Only the first value is used.</msg>
+</errors>
+</robot>

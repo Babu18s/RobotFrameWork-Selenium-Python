@@ -1,0 +1,18 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.HandlingDynamicTable :: RobotFrameWork By Ravi Babu                    
+==============================================================================
+Validating Dynamic table                                              5
+['Name', 'Disk', 'Network', 'CPU', 'Memory']
+the cpu value : 4
+The chrome cpu value is : 5.8%
+| PASS |
+------------------------------------------------------------------------------
+Suites.HandlingDynamicTable :: RobotFrameWork By Ravi Babu            | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\ResultsP\pabot_results\1\output.xml
