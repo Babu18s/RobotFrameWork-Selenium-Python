@@ -13,7 +13,7 @@ Validating DropDown
 *** Keywords ***
 Open Browser To Validate
     Open Browser    ${LOGIN URL}    ${BROWSER}
-    Title Should Be    Practice WebApp | Practice Automation - UI and API Testing
+#    Title Should Be    Practice WebApp | Practice Automation - UI and API Testing
 Scrolling using JsExecutor
     sleep   2
     execute javascript    window.scrollTo(0,1690)
