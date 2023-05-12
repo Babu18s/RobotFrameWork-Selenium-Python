@@ -23,14 +23,14 @@ DateEntry
 #    click element   ${entryDate}
 #    click element    xpath://span[@aria-label='May 22, 2023']
 TimeEntry
-    [Arguments]     ${ETime}
-    Input Text      ${entryTime}    ${ETime}
+    [Arguments]     ${inTime}
+    Input Text      ${entryTime}    ${inTime}
 ExitDate
-    [Arguments]     ${EtDate}
-    Input Text      ${exitdate}     ${EtDate}
+    [Arguments]     ${outDate}
+    Input Text      ${exitdate}     ${outDate}
 ExitTime
-    [Arguments]     ${EtTime}
-    Input Text      ${exittime}     ${EtTime}
+    [Arguments]     ${outTime}
+    Input Text      ${exittime}     ${outTime}
 Clicking on Calculate Button
     click button     ${calculateButton}
 
