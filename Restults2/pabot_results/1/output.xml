@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230511 18:36:15.124" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="DataDrivenTestingWIthCSVFile" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\DataDrivenTestingWIthCSVFile.robot">
+<kw name="open my browser" library="DataDrivenResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230511 18:36:15.739" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20230511 18:36:15.738" endtime="20230511 18:36:21.958"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230511 18:36:21.959" endtime="20230511 18:36:22.157"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:15.736" endtime="20230511 18:36:22.157"/>
+</kw>
+<test id="s1-s1-t1" name="loginwithexcel using ${username}" line="9">
+<kw name="Invalid Login">
+<arg>and</arg>
+<arg>${password}</arg>
+<msg timestamp="20230511 18:36:22.160" level="FAIL">Variable '${password}' not found.</msg>
+<status status="FAIL" starttime="20230511 18:36:22.159" endtime="20230511 18:36:22.160"/>
+</kw>
+<status status="FAIL" starttime="20230511 18:36:22.158" endtime="20230511 18:36:22.162">Variable '${password}' not found.</status>
+</test>
+<kw name="Close browsers" library="DataDrivenResources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230511 18:36:22.163" endtime="20230511 18:36:28.667"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:22.163" endtime="20230511 18:36:28.668"/>
+</kw>
+<status status="FAIL" starttime="20230511 18:36:15.168" endtime="20230511 18:36:28.668"/>
+</suite>
+<status status="FAIL" starttime="20230511 18:36:15.140" endtime="20230511 18:36:28.669"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="DataDrivenTestingWIthCSVFile">Suites.DataDrivenTestingWIthCSVFile</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230511 18:36:15.734" level="ERROR">Error in file 'C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\DataDrivenTestingWIthCSVFile.robot' on line 4: Importing library 'DataDriver' failed: ModuleNotFoundError: No module named 'DataDriver'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+</errors>
+</robot>

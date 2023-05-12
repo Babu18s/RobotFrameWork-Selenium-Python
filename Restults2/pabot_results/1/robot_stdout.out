@@ -1,0 +1,25 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.DataDrivenTestingWIthCSVFile                                           
+==============================================================================
+loginwithexcel using ${username}                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\DataDrivenTestingWIthCSVFile.robot:9
+    T:  loginwithexcel using ${username}    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\DataDrivenTestingWIthCSVFile.robot:9
+      Invalid Login    and    ${password}
+      |  ${password} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${password}' not found.
+------------------------------------------------------------------------------
+Suites.DataDrivenTestingWIthCSVFile                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\Restults2\pabot_results\1\output.xml

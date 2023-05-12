@@ -1,0 +1,16 @@
+==============================================================================
+PageObjectModel                                                               
+==============================================================================
+PageObjectModel.WebParkingParkingPrice                                        
+==============================================================================
+WebParking Test                                                       The parking fair for the corresponding slot and dates is : 73.00€
+3 Day(s), 0 Hour(s), 1 Minute(s)
+| PASS |
+------------------------------------------------------------------------------
+PageObjectModel.WebParkingParkingPrice                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+PageObjectModel                                                       | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\pabot_results\1\output.xml

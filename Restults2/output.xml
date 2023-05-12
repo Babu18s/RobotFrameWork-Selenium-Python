@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 6.0.2 (Python 3.11.2 on win32)" generated="20230511 18:36:53.244" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="DataDrivenTesting" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\DataDrivenTesting.robot">
+<kw name="open my browser" library="DataDrivenResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230511 18:36:15.735" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20230511 18:36:15.734" endtime="20230511 18:36:21.767"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230511 18:36:21.768" endtime="20230511 18:36:21.892"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:15.733" endtime="20230511 18:36:21.892"/>
+</kw>
+<test id="s1-s1-t1" name="valid user Empty password" line="8">
+<kw name="Invalid Login">
+<arg>tomsmith</arg>
+<arg>${EMPTY}</arg>
+<kw name="open Log in Page" library="DataDrivenResources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230511 18:36:21.900" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<status status="PASS" starttime="20230511 18:36:21.899" endtime="20230511 18:36:22.321"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Form Authentication</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:22.323" level="INFO">Clicking link 'Form Authentication'.</msg>
+<status status="PASS" starttime="20230511 18:36:22.322" endtime="20230511 18:36:23.055"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:21.898" endtime="20230511 18:36:23.056"/>
+</kw>
+<kw name="Input UserName" library="DataDrivenResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:23.057" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230511 18:36:23.056" endtime="20230511 18:36:23.175"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:23.056" endtime="20230511 18:36:23.175"/>
+</kw>
+<kw name="Input Password" library="DataDrivenResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:23.179" level="INFO">Typing text '' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230511 18:36:23.176" endtime="20230511 18:36:23.268"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:23.175" endtime="20230511 18:36:23.269"/>
+</kw>
+<kw name="Login Button" library="DataDrivenResources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:23.270" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20230511 18:36:23.269" endtime="20230511 18:36:23.951"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:23.269" endtime="20230511 18:36:23.952"/>
+</kw>
+<kw name="Error message should be present" library="DataDrivenResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>invalid!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230511 18:36:23.981" level="INFO">Current page contains text 'invalid!'.</msg>
+<status status="PASS" starttime="20230511 18:36:23.953" endtime="20230511 18:36:23.981"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:23.952" endtime="20230511 18:36:23.981"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:21.894" endtime="20230511 18:36:23.981"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:21.892" endtime="20230511 18:36:23.982"/>
+</test>
+<test id="s1-s1-t2" name="valid user invalid password" line="9">
+<kw name="Invalid Login">
+<arg>tomsmith</arg>
+<arg>abbccd</arg>
+<kw name="open Log in Page" library="DataDrivenResources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230511 18:36:23.984" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<status status="PASS" starttime="20230511 18:36:23.984" endtime="20230511 18:36:24.328"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Form Authentication</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:24.330" level="INFO">Clicking link 'Form Authentication'.</msg>
+<status status="PASS" starttime="20230511 18:36:24.329" endtime="20230511 18:36:24.764"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:23.984" endtime="20230511 18:36:24.764"/>
+</kw>
+<kw name="Input UserName" library="DataDrivenResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:24.767" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230511 18:36:24.766" endtime="20230511 18:36:24.870"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:24.764" endtime="20230511 18:36:24.871"/>
+</kw>
+<kw name="Input Password" library="DataDrivenResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:24.872" level="INFO">Typing text 'abbccd' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230511 18:36:24.871" endtime="20230511 18:36:24.969"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:24.871" endtime="20230511 18:36:24.970"/>
+</kw>
+<kw name="Login Button" library="DataDrivenResources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:24.972" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20230511 18:36:24.970" endtime="20230511 18:36:25.645"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:24.970" endtime="20230511 18:36:25.646"/>
+</kw>
+<kw name="Error message should be present" library="DataDrivenResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>invalid!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230511 18:36:25.661" level="INFO">Current page contains text 'invalid!'.</msg>
+<status status="PASS" starttime="20230511 18:36:25.646" endtime="20230511 18:36:25.661"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:25.646" endtime="20230511 18:36:25.662"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:23.983" endtime="20230511 18:36:25.662"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:23.982" endtime="20230511 18:36:25.662"/>
+</test>
+<test id="s1-s1-t3" name="invalid user Empty password" line="10">
+<kw name="Invalid Login">
+<arg>raja</arg>
+<arg>${EMPTY}</arg>
+<kw name="open Log in Page" library="DataDrivenResources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230511 18:36:25.667" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<status status="PASS" starttime="20230511 18:36:25.667" endtime="20230511 18:36:26.007"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Form Authentication</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:26.008" level="INFO">Clicking link 'Form Authentication'.</msg>
+<status status="PASS" starttime="20230511 18:36:26.007" endtime="20230511 18:36:26.433"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:25.666" endtime="20230511 18:36:26.434"/>
+</kw>
+<kw name="Input UserName" library="DataDrivenResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:26.437" level="INFO">Typing text 'raja' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230511 18:36:26.435" endtime="20230511 18:36:26.539"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:26.434" endtime="20230511 18:36:26.540"/>
+</kw>
+<kw name="Input Password" library="DataDrivenResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:26.541" level="INFO">Typing text '' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230511 18:36:26.540" endtime="20230511 18:36:26.633"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:26.540" endtime="20230511 18:36:26.633"/>
+</kw>
+<kw name="Login Button" library="DataDrivenResources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:26.635" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20230511 18:36:26.634" endtime="20230511 18:36:27.322"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:26.634" endtime="20230511 18:36:27.323"/>
+</kw>
+<kw name="Error message should be present" library="DataDrivenResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>invalid!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230511 18:36:27.340" level="INFO">Current page contains text 'invalid!'.</msg>
+<status status="PASS" starttime="20230511 18:36:27.324" endtime="20230511 18:36:27.340"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:27.323" endtime="20230511 18:36:27.341"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:25.664" endtime="20230511 18:36:27.341"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:25.664" endtime="20230511 18:36:27.341"/>
+</test>
+<test id="s1-s1-t4" name="invalid user invalid password" line="11">
+<kw name="Invalid Login">
+<arg>rajakiller</arg>
+<arg>raniqueen</arg>
+<kw name="open Log in Page" library="DataDrivenResources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230511 18:36:27.346" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<status status="PASS" starttime="20230511 18:36:27.344" endtime="20230511 18:36:27.733"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Form Authentication</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:27.736" level="INFO">Clicking link 'Form Authentication'.</msg>
+<status status="PASS" starttime="20230511 18:36:27.734" endtime="20230511 18:36:28.180"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:27.342" endtime="20230511 18:36:28.181"/>
+</kw>
+<kw name="Input UserName" library="DataDrivenResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:28.184" level="INFO">Typing text 'rajakiller' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230511 18:36:28.182" endtime="20230511 18:36:28.302"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:28.181" endtime="20230511 18:36:28.302"/>
+</kw>
+<kw name="Input Password" library="DataDrivenResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:28.304" level="INFO">Typing text 'raniqueen' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230511 18:36:28.303" endtime="20230511 18:36:28.416"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:28.302" endtime="20230511 18:36:28.416"/>
+</kw>
+<kw name="Login Button" library="DataDrivenResources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:28.417" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20230511 18:36:28.417" endtime="20230511 18:36:29.115"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:28.416" endtime="20230511 18:36:29.115"/>
+</kw>
+<kw name="Error message should be present" library="DataDrivenResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>invalid!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230511 18:36:29.139" level="INFO">Current page contains text 'invalid!'.</msg>
+<status status="PASS" starttime="20230511 18:36:29.118" endtime="20230511 18:36:29.139"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:29.115" endtime="20230511 18:36:29.139"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:27.342" endtime="20230511 18:36:29.139"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:27.342" endtime="20230511 18:36:29.140"/>
+</test>
+<test id="s1-s1-t5" name="invalid user valid password" line="12">
+<kw name="Invalid Login">
+<arg>theking</arg>
+<arg>SuperSecretPassword!</arg>
+<kw name="open Log in Page" library="DataDrivenResources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230511 18:36:29.142" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<status status="PASS" starttime="20230511 18:36:29.142" endtime="20230511 18:36:29.557"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Form Authentication</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:29.559" level="INFO">Clicking link 'Form Authentication'.</msg>
+<status status="PASS" starttime="20230511 18:36:29.558" endtime="20230511 18:36:30.014"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:29.141" endtime="20230511 18:36:30.014"/>
+</kw>
+<kw name="Input UserName" library="DataDrivenResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:30.018" level="INFO">Typing text 'theking' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230511 18:36:30.016" endtime="20230511 18:36:30.134"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:30.014" endtime="20230511 18:36:30.134"/>
+</kw>
+<kw name="Input Password" library="DataDrivenResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:30.137" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230511 18:36:30.136" endtime="20230511 18:36:30.276"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:30.134" endtime="20230511 18:36:30.277"/>
+</kw>
+<kw name="Login Button" library="DataDrivenResources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:30.280" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20230511 18:36:30.279" endtime="20230511 18:36:31.032"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:30.278" endtime="20230511 18:36:31.032"/>
+</kw>
+<kw name="Error message should be present" library="DataDrivenResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>invalid!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230511 18:36:31.054" level="INFO">Current page contains text 'invalid!'.</msg>
+<status status="PASS" starttime="20230511 18:36:31.034" endtime="20230511 18:36:31.055"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:31.034" endtime="20230511 18:36:31.055"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:29.141" endtime="20230511 18:36:31.056"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:29.140" endtime="20230511 18:36:31.056"/>
+</test>
+<kw name="Close browsers" library="DataDrivenResources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230511 18:36:31.057" endtime="20230511 18:36:39.036"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:31.057" endtime="20230511 18:36:39.036"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:15.168" endtime="20230511 18:36:39.036"/>
+</suite>
+<suite id="s1-s2" name="DataDrivenTestingWIthCSVFile" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\DataDrivenTestingWIthCSVFile.robot">
+<kw name="open my browser" library="DataDrivenResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230511 18:36:15.739" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20230511 18:36:15.738" endtime="20230511 18:36:21.958"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230511 18:36:21.959" endtime="20230511 18:36:22.157"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:15.736" endtime="20230511 18:36:22.157"/>
+</kw>
+<test id="s1-s2-t1" name="loginwithexcel using ${username}" line="9">
+<kw name="Invalid Login">
+<arg>and</arg>
+<arg>${password}</arg>
+<msg timestamp="20230511 18:36:22.160" level="FAIL">Variable '${password}' not found.</msg>
+<status status="FAIL" starttime="20230511 18:36:22.159" endtime="20230511 18:36:22.160"/>
+</kw>
+<status status="FAIL" starttime="20230511 18:36:22.158" endtime="20230511 18:36:22.162">Variable '${password}' not found.</status>
+</test>
+<kw name="Close browsers" library="DataDrivenResources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230511 18:36:22.163" endtime="20230511 18:36:28.667"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:22.163" endtime="20230511 18:36:28.668"/>
+</kw>
+<status status="FAIL" starttime="20230511 18:36:15.168" endtime="20230511 18:36:28.668"/>
+</suite>
+<suite id="s1-s3" name="DataDrivenTestingWithExcel" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\DataDrivenTestingWithExcel.robot">
+<kw name="open my browser" library="DataDrivenResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230511 18:36:30.277" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20230511 18:36:30.274" endtime="20230511 18:36:36.002"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230511 18:36:36.002" endtime="20230511 18:36:36.138"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:30.270" endtime="20230511 18:36:36.138"/>
+</kw>
+<test id="s1-s3-t1" name="loginwithexcel using ${username}" line="9">
+<kw name="Invalid Login">
+<arg>and</arg>
+<arg>${password}</arg>
+<msg timestamp="20230511 18:36:36.140" level="FAIL">Variable '${password}' not found.</msg>
+<status status="FAIL" starttime="20230511 18:36:36.140" endtime="20230511 18:36:36.141"/>
+</kw>
+<status status="FAIL" starttime="20230511 18:36:36.139" endtime="20230511 18:36:36.142">Variable '${password}' not found.</status>
+</test>
+<kw name="Close browsers" library="DataDrivenResources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230511 18:36:36.143" endtime="20230511 18:36:42.419"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:36.143" endtime="20230511 18:36:42.420"/>
+</kw>
+<status status="FAIL" starttime="20230511 18:36:29.723" endtime="20230511 18:36:42.420"/>
+</suite>
+<suite id="s1-s4" name="DropDownLists" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\DropDownLists.robot">
+<test id="s1-s4-t1" name="Validating DropDown" line="9">
+<kw name="Open Browser To Validate">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230511 18:36:40.135" level="INFO">Opening browser 'Chrome' to base url 'https://practice.expandtesting.com/'.</msg>
+<status status="PASS" starttime="20230511 18:36:40.134" endtime="20230511 18:36:43.853"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:40.134" endtime="20230511 18:36:43.853"/>
+</kw>
+<kw name="Scrolling using JsExecutor">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230511 18:36:45.855" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230511 18:36:43.854" endtime="20230511 18:36:45.855"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,1690)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230511 18:36:45.856" level="INFO">Executing JavaScript:
+window.scrollTo(0,1690)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230511 18:36:45.855" endtime="20230511 18:36:45.862"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230511 18:36:47.862" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230511 18:36:45.862" endtime="20230511 18:36:47.862"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:43.853" endtime="20230511 18:36:47.863"/>
+</kw>
+<kw name="Click on DropDown">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Dropdown List</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230511 18:36:47.864" level="INFO">Clicking link 'Dropdown List'.</msg>
+<status status="PASS" starttime="20230511 18:36:47.864" endtime="20230511 18:36:48.534"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>dropdown</arg>
+<arg>Option 2</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230511 18:36:48.536" level="INFO">Selecting options from selection list 'dropdown' by label Option 2.</msg>
+<status status="PASS" starttime="20230511 18:36:48.535" endtime="20230511 18:36:48.641"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230511 18:36:50.643" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230511 18:36:48.642" endtime="20230511 18:36:50.643"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:47.863" endtime="20230511 18:36:50.643"/>
+</kw>
+<status status="PASS" starttime="20230511 18:36:40.133" endtime="20230511 18:36:50.643"/>
+</test>
+<doc>RobotFrameWork by RaviBabu.</doc>
+<status status="PASS" starttime="20230511 18:36:39.796" endtime="20230511 18:36:50.644"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 4 executions.</doc>
+<status status="FAIL" starttime="20230511 18:36:15.140" endtime="20230511 18:36:50.684"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="2" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1" name="DataDrivenTesting">Suites.DataDrivenTesting</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="DataDrivenTestingWIthCSVFile">Suites.DataDrivenTestingWIthCSVFile</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s3" name="DataDrivenTestingWithExcel">Suites.DataDrivenTestingWithExcel</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="DropDownLists">Suites.DropDownLists</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230511 18:36:15.734" level="ERROR">Error in file 'C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\DataDrivenTestingWIthCSVFile.robot' on line 4: Importing library 'DataDriver' failed: ModuleNotFoundError: No module named 'DataDriver'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+<msg timestamp="20230511 18:36:30.267" level="ERROR">Error in file 'C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\TestCasesRB\DataDrivenTestingWithExcel.robot' on line 4: Importing library 'DataDriver' failed: ModuleNotFoundError: No module named 'DataDriver'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311
+  C:\Users\Ravi Singavarapu\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+</errors>
+</robot>

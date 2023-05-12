@@ -1,0 +1,78 @@
+==============================================================================
+PageObjectModel                                                               
+==============================================================================
+PageObjectModel.Sequentially                                                  
+==============================================================================
+PageObjectModel.Sequentially.ReserveOnline                                    
+==============================================================================
+ReserveOnline Test                                                      
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel\Sequentially\ReserveOnline.robot:8
+    T:  ReserveOnline Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel\Sequentially\ReserveOnline.robot:11
+      Click on ReserveOnline    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\Resources\ReserveOnlineResources.robot:10
+      Click Button    ${reserveOnlineButton}
+      |  ${reserveOnlineButton} = id:reserveOnline (str)
+______________________________________________________________________________
+| FAIL |
+No browser is open.
+------------------------------------------------------------------------------
+PageObjectModel.Sequentially.ReserveOnline                            | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+PageObjectModel.Sequentially.WebParkingParkingPrice                           
+==============================================================================
+WebParking Test                                                         
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel\Sequentially\WebParkingParkingPrice.robot:12
+    T:  WebParking Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel\Sequentially\WebParkingParkingPrice.robot:23
+      Clicking on Calculate Button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\Resources\PageObjectresources.robot:35
+      Click Button    ${calculateButton}
+      |  ${calculateButton} = id:calculateCost (str)
+______________________________________________________________________________
+| FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x009BDCE3+50899]
+	(No symbol) [0x0094E111]
+	(No symbol) [0x00855588]
+	(No symbol) [0x0083D333]
+	(No symbol) [0x0089F4DB]
+	(No symbol) [0x008ADB33]
+	(No symbol) [0x0089B6F6]
+	(No symbol) [0x00877708]
+	(No symbol) [0x0087886D]
+	GetHandleVerifier [0x00C23EAE+2566302]
+	GetHandleVerifier [0x00C592B1+2784417]
+	GetHandleVerifier [0x00C5327C+2759788]
+	GetHandleVerifier [0x00A55740+672048]
+	(No symbol) [0x00958872]
+	(No symbol) [0x009541C8]
+	(No symbol) [0x009542AB]
+	(No symbol) [0x009471B7]
+	BaseThreadInitThunk [0x76547D49+25]
+	RtlInitializeExceptionChain [0x7767B74B+107]
+	RtlClearBits [0x7767B6CF+191]
+------------------------------------------------------------------------------
+PageObjectModel.Sequentially.WebParkingParkingPrice                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+PageObjectModel.Sequentially                                          | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+PageObjectModel                                                       | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\pabot_results\0\output.xml

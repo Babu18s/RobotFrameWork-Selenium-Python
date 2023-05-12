@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230511 18:16:52.868" rpa="false" schemaversion="3">
+<suite id="s1" name="PageObjectModel" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel">
+<suite id="s1-s1" name="ReserveOnline" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel\ReserveOnline.robot">
+<test id="s1-s1-t1" name="ReserveOnline Test" line="8">
+<kw name="Click on ReserveOnline" library="ReserveOnlineResources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${reserveOnlineButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230511 18:16:53.352" level="INFO">Clicking button 'id:reserveOnline'.</msg>
+<msg timestamp="20230511 18:16:53.352" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230511 18:16:53.352" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20230511 18:16:53.351" endtime="20230511 18:16:53.356"/>
+</kw>
+<status status="FAIL" starttime="20230511 18:16:53.350" endtime="20230511 18:16:53.357"/>
+</kw>
+<kw name="FormFilling" library="ReserveOnlineResources">
+<status status="NOT RUN" starttime="20230511 18:16:53.357" endtime="20230511 18:16:53.358"/>
+</kw>
+<kw name="click on booknow" library="ReserveOnlineResources">
+<status status="NOT RUN" starttime="20230511 18:16:53.358" endtime="20230511 18:16:53.358"/>
+</kw>
+<tag>base</tag>
+<status status="FAIL" starttime="20230511 18:16:53.349" endtime="20230511 18:16:53.359">No browser is open.</status>
+</test>
+<status status="FAIL" starttime="20230511 18:16:52.931" endtime="20230511 18:16:53.360"/>
+</suite>
+<status status="FAIL" starttime="20230511 18:16:52.890" endtime="20230511 18:16:53.361"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">base</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="PageObjectModel">PageObjectModel</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="ReserveOnline">PageObjectModel.ReserveOnline</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

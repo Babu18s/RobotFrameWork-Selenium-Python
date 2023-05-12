@@ -1,0 +1,28 @@
+==============================================================================
+PageObjectModel                                                               
+==============================================================================
+PageObjectModel.ReserveOnline                                                 
+==============================================================================
+ReserveOnline Test                                                      
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel\ReserveOnline.robot:8
+    T:  ReserveOnline Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel\ReserveOnline.robot:11
+      Click on ReserveOnline    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\Resources\ReserveOnlineResources.robot:10
+      Click Button    ${reserveOnlineButton}
+      |  ${reserveOnlineButton} = id:reserveOnline (str)
+______________________________________________________________________________
+| FAIL |
+No browser is open.
+------------------------------------------------------------------------------
+PageObjectModel.ReserveOnline                                         | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+PageObjectModel                                                       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\pabot_results\2\output.xml

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230511 18:16:52.830" rpa="false" schemaversion="3">
+<suite id="s1" name="PageObjectModel" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel">
+<suite id="s1-s1" name="Sequentially" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel\Sequentially">
+<suite id="s1-s1-s1" name="ReserveOnline" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel\Sequentially\ReserveOnline.robot">
+<test id="s1-s1-s1-t1" name="ReserveOnline Test" line="8">
+<kw name="Click on ReserveOnline" library="ReserveOnlineResources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${reserveOnlineButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230511 18:16:53.354" level="INFO">Clicking button 'id:reserveOnline'.</msg>
+<msg timestamp="20230511 18:16:53.354" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230511 18:16:53.354" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20230511 18:16:53.353" endtime="20230511 18:16:53.359"/>
+</kw>
+<status status="FAIL" starttime="20230511 18:16:53.352" endtime="20230511 18:16:53.359"/>
+</kw>
+<kw name="FormFilling" library="ReserveOnlineResources">
+<status status="NOT RUN" starttime="20230511 18:16:53.360" endtime="20230511 18:16:53.360"/>
+</kw>
+<kw name="click on booknow" library="ReserveOnlineResources">
+<status status="NOT RUN" starttime="20230511 18:16:53.360" endtime="20230511 18:16:53.361"/>
+</kw>
+<tag>Sequence</tag>
+<status status="FAIL" starttime="20230511 18:16:53.350" endtime="20230511 18:16:53.361">No browser is open.</status>
+</test>
+<status status="FAIL" starttime="20230511 18:16:52.888" endtime="20230511 18:16:53.362"/>
+</suite>
+<suite id="s1-s1-s2" name="WebParkingParkingPrice" source="C:\Users\Ravi Singavarapu\PycharmProjects\RobotFrameWorkProject\PageObjectModel\Sequentially\WebParkingParkingPrice.robot">
+<test id="s1-s1-s2-t1" name="WebParking Test" line="12">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230511 18:16:53.378" endtime="20230511 18:16:53.378"/>
+</kw>
+<kw name="open my browser" library="PageObjectresources">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230511 18:16:53.381" level="INFO">Opening browser 'Chrome' to base url 'https://practice.expandtesting.com/'.</msg>
+<status status="PASS" starttime="20230511 18:16:53.379" endtime="20230511 18:16:59.021"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230511 18:16:59.021" endtime="20230511 18:17:01.575"/>
+</kw>
+<status status="PASS" starttime="20230511 18:16:53.379" endtime="20230511 18:17:01.575"/>
+</kw>
+<kw name="Click on demo apps" library="PageObjectresources">
+<kw name="Scrolling using JsExecutor" library="PageObjectresources">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230511 18:17:03.577" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230511 18:17:01.576" endtime="20230511 18:17:03.577"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,2690)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230511 18:17:03.579" level="INFO">Executing JavaScript:
+window.scrollTo(0,2690)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230511 18:17:03.578" endtime="20230511 18:17:05.591"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230511 18:17:07.592" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230511 18:17:05.591" endtime="20230511 18:17:07.592"/>
+</kw>
+<status status="PASS" starttime="20230511 18:17:01.576" endtime="20230511 18:17:07.593"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${webParkingLink}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230511 18:17:07.594" level="INFO">Clicking link 'Web Parking'.</msg>
+<status status="PASS" starttime="20230511 18:17:07.593" endtime="20230511 18:17:15.189"/>
+</kw>
+<status status="PASS" starttime="20230511 18:17:01.575" endtime="20230511 18:17:15.189"/>
+</kw>
+<kw name="SelectingPracking Slot" library="PageObjectresources">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${chooseParkinglot}</arg>
+<arg>${value1}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230511 18:17:15.192" level="INFO">Selecting options from selection list 'parkingLot' by value ShortTerm.</msg>
+<status status="PASS" starttime="20230511 18:17:15.191" endtime="20230511 18:17:29.414"/>
+</kw>
+<status status="PASS" starttime="20230511 18:17:15.189" endtime="20230511 18:17:29.414"/>
+</kw>
+<kw name="DateEntry" library="PageObjectresources">
+<arg>${IdataDate}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${entryDate}</arg>
+<arg>${EDate}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:17:29.415" level="INFO">Typing text '2023/05/22' into text field 'id:entryDate'.</msg>
+<status status="PASS" starttime="20230511 18:17:29.415" endtime="20230511 18:17:35.614"/>
+</kw>
+<status status="PASS" starttime="20230511 18:17:29.414" endtime="20230511 18:17:35.614"/>
+</kw>
+<kw name="TimeEntry" library="PageObjectresources">
+<arg>${IdataTime}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${entryTime}</arg>
+<arg>${inTime}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:17:35.616" level="INFO">Typing text '16:20' into text field 'id:entryTime'.</msg>
+<status status="PASS" starttime="20230511 18:17:35.615" endtime="20230511 18:17:41.781"/>
+</kw>
+<status status="PASS" starttime="20230511 18:17:35.614" endtime="20230511 18:17:41.781"/>
+</kw>
+<kw name="ExitDate" library="PageObjectresources">
+<arg>${EdataDate}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${exitdate}</arg>
+<arg>${outDate}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:17:41.783" level="INFO">Typing text '2023/05/25' into text field 'id:exitDate'.</msg>
+<status status="PASS" starttime="20230511 18:17:41.781" endtime="20230511 18:17:47.939"/>
+</kw>
+<status status="PASS" starttime="20230511 18:17:41.781" endtime="20230511 18:17:47.939"/>
+</kw>
+<kw name="ExitTime" library="PageObjectresources">
+<arg>${EdataTime}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${exittime}</arg>
+<arg>${outTime}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 18:17:47.940" level="INFO">Typing text '16:21' into text field 'id:exitTime'.</msg>
+<status status="PASS" starttime="20230511 18:17:47.940" endtime="20230511 18:17:54.114"/>
+</kw>
+<status status="PASS" starttime="20230511 18:17:47.939" endtime="20230511 18:17:54.114"/>
+</kw>
+<kw name="Clicking on Calculate Button" library="PageObjectresources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${calculateButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230511 18:17:54.116" level="INFO">Clicking button 'id:calculateCost'.</msg>
+<msg timestamp="20230511 18:17:58.141" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x009BDCE3+50899]
+	(No symbol) [0x0094E111]
+	(No symbol) [0x00855588]
+	(No symbol) [0x0083D333]
+	(No symbol) [0x0089F4DB]
+	(No symbol) [0x008ADB33]
+	(No symbol) [0x0089B6F6]
+	(No symbol) [0x00877708]
+	(No symbol) [0x0087886D]
+	GetHandleVerifier [0x00C23EAE+2566302]
+	GetHandleVerifier [0x00C592B1+2784417]
+	GetHandleVerifier [0x00C5327C+2759788]
+	GetHandleVerifier [0x00A55740+672048]
+	(No symbol) [0x00958872]
+	(No symbol) [0x009541C8]
+	(No symbol) [0x009542AB]
+	(No symbol) [0x009471B7]
+	BaseThreadInitThunk [0x76547D49+25]
+	RtlInitializeExceptionChain [0x7767B74B+107]
+	RtlClearBits [0x7767B6CF+191]
+</msg>
+<msg timestamp="20230511 18:17:58.142" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x009BDCE3+50899]
+	(No symbol) [0x0094E111]
+	(No symbol) [0x00855588]
+	(No symbol) [0x0083D333]
+	(No symbol) [0x0089F4DB]
+	(No symbol) [0x008ADB33]
+	(No symbol) [0x0089B6F6]
+	(No symbol) [0x00877708]
+	(No symbol) [0x0087886D]
+	GetHandleVerifier [0x00C23EAE+2566302]
+	GetHandleVerifier [0x00C592B1+2784417]
+	GetHandleVerifier [0x00C5327C+2759788]
+	GetHandleVerifier [0x00A55740+672048]
+	(No symbol) [0x00958872]
+	(No symbol) [0x009541C8]
+	(No symbol) [0x009542AB]
+	(No symbol) [0x009471B7]
+	BaseThreadInitThunk [0x76547D49+25]
+	RtlInitializeExceptionChain [0x7767B74B+107]
+	RtlClearBits [0x7767B6CF+191]
+</msg>
+<status status="FAIL" starttime="20230511 18:17:54.114" endtime="20230511 18:17:58.146"/>
+</kw>
+<status status="FAIL" starttime="20230511 18:17:54.114" endtime="20230511 18:17:58.146"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>WebParking.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20230511 18:17:58.146" endtime="20230511 18:17:58.147"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${fee}</var>
+<arg>xpath://div[@class='alert alert-success']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230511 18:17:58.147" endtime="20230511 18:17:58.147"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>The parking fair for the corresponding slot and dates is : ${fee}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230511 18:17:58.147" endtime="20230511 18:17:58.147"/>
+</kw>
+<tag>Sequence</tag>
+<status status="FAIL" starttime="20230511 18:16:53.377" endtime="20230511 18:17:58.147">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x009BDCE3+50899]
+	(No symbol) [0x0094E111]
+	(No symbol) [0x00855588]
+	(No symbol) [0x0083D333]
+	(No symbol) [0x0089F4DB]
+	(No symbol) [0x008ADB33]
+	(No symbol) [0x0089B6F6]
+	(No symbol) [0x00877708]
+	(No symbol) [0x0087886D]
+	GetHandleVerifier [0x00C23EAE+2566302]
+	GetHandleVerifier [0x00C592B1+2784417]
+	GetHandleVerifier [0x00C5327C+2759788]
+	GetHandleVerifier [0x00A55740+672048]
+	(No symbol) [0x00958872]
+	(No symbol) [0x009541C8]
+	(No symbol) [0x009542AB]
+	(No symbol) [0x009471B7]
+	BaseThreadInitThunk [0x76547D49+25]
+	RtlInitializeExceptionChain [0x7767B74B+107]
+	RtlClearBits [0x7767B6CF+191]
+</status>
+</test>
+<status status="FAIL" starttime="20230511 18:16:53.363" endtime="20230511 18:17:58.148"/>
+</suite>
+<status status="FAIL" starttime="20230511 18:16:52.882" endtime="20230511 18:17:58.151"/>
+</suite>
+<status status="FAIL" starttime="20230511 18:16:52.847" endtime="20230511 18:17:58.153"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">Sequence</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="PageObjectModel">PageObjectModel</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Sequentially">PageObjectModel.Sequentially</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="ReserveOnline">PageObjectModel.Sequentially.ReserveOnline</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s2" name="WebParkingParkingPrice">PageObjectModel.Sequentially.WebParkingParkingPrice</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230511 18:17:58.141" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x009BDCE3+50899]
+	(No symbol) [0x0094E111]
+	(No symbol) [0x00855588]
+	(No symbol) [0x0083D333]
+	(No symbol) [0x0089F4DB]
+	(No symbol) [0x008ADB33]
+	(No symbol) [0x0089B6F6]
+	(No symbol) [0x00877708]
+	(No symbol) [0x0087886D]
+	GetHandleVerifier [0x00C23EAE+2566302]
+	GetHandleVerifier [0x00C592B1+2784417]
+	GetHandleVerifier [0x00C5327C+2759788]
+	GetHandleVerifier [0x00A55740+672048]
+	(No symbol) [0x00958872]
+	(No symbol) [0x009541C8]
+	(No symbol) [0x009542AB]
+	(No symbol) [0x009471B7]
+	BaseThreadInitThunk [0x76547D49+25]
+	RtlInitializeExceptionChain [0x7767B74B+107]
+	RtlClearBits [0x7767B6CF+191]
+</msg>
+</errors>
+</robot>
