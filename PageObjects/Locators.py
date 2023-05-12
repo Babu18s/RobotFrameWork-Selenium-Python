@@ -1,4 +1,4 @@
-#locators
+#locators for webparking pice calculation
 webParkingLink="Web Parking"
 chooseParkinglot="parkingLot"
 value1="ShortTerm"
@@ -7,3 +7,15 @@ entryTime="id:entryTime"
 exitdate="id:exitDate"
 exittime="id:exitTime"
 calculateButton="id:calculateCost"
+
+#Locators for Reserve Online
+reserveOnlineButton="id:reserveOnline"
+fName="id:firstName"
+lName="id:lastName"
+emailID="id:email"
+phonenumber="id:phone"
+choosevehicleSize="id:vehicleSize"
+sizeValue1="small"
+sizeValue2="medium"
+licensePlateNumber="id:lpNumber"
+booknowButton="Book Now!"
