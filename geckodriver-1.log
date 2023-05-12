@@ -1,0 +1,18 @@
+1683809701954	geckodriver	INFO	Listening on 127.0.0.1:61305
+1683809704996	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61306" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\RAVISI~1\\AppData\\Local\\Temp\\rust_mozprofilebAu6Hw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1683809705492	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683809705500	Marionette	INFO	Listening on port 61316
+Read port: 61316
+WebDriver BiDi listening on ws://127.0.0.1:61306
+1683809705794	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\RAVISI~1\\AppData\\Local\\Temp\\rust_mozprofilebAu6Hw\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:61306/devtools/browser/9b9e7f84-2c27-4667-9de7-84c540ae1ae9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practice.expandtesting.com."
+1683809905304	Marionette	INFO	Stopped listening on port 61316
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+[Parent 26788, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777

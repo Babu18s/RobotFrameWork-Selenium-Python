@@ -1,0 +1,8 @@
+datasources:3a64f5ee0824b625c213ec81485857a372707718
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:49a907715f79d9ea2da4c0688e8672b995d955a5
+--suite Suites.DataDrivenTesting
+--suite Suites.DataDrivenTestingWIthCSVFile
+--suite Suites.DataDrivenTestingWithExcel
+--suite Suites.DropDownLists
